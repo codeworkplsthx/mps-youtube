@@ -25,12 +25,15 @@ import locale
 import sys
 import os
 
+#gets youtube metadata
 import pafy
 
+#note: "from ." means "from this package/namespace"
 from . import g, c, commands, screen, history, util
 from . import __version__, playlists, content, listview
 from . import config
 
+#remember up to 2000 lines
 completer = None
 try:
     import readline
